@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(240, 238, 238) ;
+}
+
+.career-head{
+    font-size: 48px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 700;
+    margin-top: 50px;
+}
+
+.career-description{
+    display:flex ;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
+    
+    
+}
+
+.about-careers{
+width: 35%;
+margin-right: 25px;
+box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+background-color: white;
+padding: 10px;
+font-size: 16px;
+min-height: 25vw;
+}
+
+.about-careers div:nth-child(1){
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+.about-careers div:nth-child(1) img{
+    width: 50%;
+    height: 200px;
+    
+    
+}
+
+.about-careers div:nth-child(1) p{
+    width: 46%;
+    
+}
+
+.vacancies{
+    background-color: white;
+width: 35%;
+margin-left: 25px;
+box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+padding:10px;
+font-family: Arial, Helvetica, sans-serif;
+min-height: 25vw;
+
+}
+.vacancies div:nth-child(1){
+    margin-bottom: 13px;
+    font-size: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    
+}
+
+.vacancies div:nth-child(2) p{
+    font-weight: bold;
+}
+
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    width: max-content;
+    margin:  0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover{
+    background-color: rgb(133, 212, 53);
+}
+
+.about-more{
+    max-width: 900px;
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    box-shadow:0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    animation-name: animate;
+    animation-duration: 0.8s;
+    
+    
+
+}
+@keyframes animate {
+    
+
+    
+    0%{
+        position: absolute;
+        left:-1000px;
+    }
+    
+    100%{
+        position: absolute;
+        left: 25%;
+
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-careers div:nth-child(1) img{
+        width: 50%;
+        height: 250px;
+        
+        
+    }
+    
+    .about-careers div:nth-child(1) p{
+        width: 47%;
+        
+    }
+}
+
+@media screen and (max-width:800px) {
+    
+    .career-description{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .vacancies{
+        margin: 0;
+        margin-top: 25px;
+        width: 50%;
+        min-width: 320px;
+    }
+    .about-careers{
+        margin: 0;
+        width: 50%;
+        min-width: 335px;
+
+    }
+}
